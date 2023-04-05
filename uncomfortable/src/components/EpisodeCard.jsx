@@ -8,9 +8,8 @@ import { CardHeader } from '@mui/material';
 
 function EpisodeCard({title, description}) {
     return (
-        <Card sx={{ minWidth: 275 }}>
-            <CardHeader title={title}>   
-            </CardHeader>
+        <Card>
+            <CardHeader title={title}></CardHeader>
             <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                    {description}
