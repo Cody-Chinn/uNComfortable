@@ -8,7 +8,7 @@ import { CardHeader } from '@mui/material';
 
 function EpisodeCard({title, description}) {
     return (
-        <Card>
+        <Card style={{'margin-top': '1em', 'margin-bottom': '1em'}}>
             <CardHeader title={title}></CardHeader>
             <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
