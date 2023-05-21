@@ -12,9 +12,9 @@ function Episodes({isDesktopResolution}) {
             <Grid container spacing={2} display="flex" justifyContent="center">
                 {(isDesktopResolution &&
                     <Grid xs={2} md={2}>
-                        <Typography variant='h6' style={{ 'margin-top': '1em', 'margin-bottom': '1em' }}>Topics</Typography>
+                        <Typography variant='h6' style={{ marginTop: '1em', marginBottom: '1em' }}>Topics</Typography>
                         {testFilterList['tags'].map((tag) => (
-                            <Card style={{ 'margin-top': '1em', 'margin-bottom': '1em' }}>
+                            <Card style={{ marginTop: '1em', marginBottom: '1em' }}>
                                 <CardContent>
                                     <Typography sx={{ fontSize: 14 }}>
                                         {tag}
@@ -29,6 +29,7 @@ function Episodes({isDesktopResolution}) {
                 <Grid xs={8} md={6}>
                     {testEpisodeList.map((episode) => (
                         <EpisodeCard
+                            key={episode.number}
                             title={"Episode " + episode.number + ": " + episode.title}
                             description={episode.description}>
                         </EpisodeCard>
